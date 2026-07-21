@@ -1,0 +1,20 @@
+[project]
+name = "inventory-api"
+version = "0.1.0"
+description = "A production-shaped inventory API built with the Robyn framework"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "asyncpg>=0.31.0",
+    "pydantic-settings>=2.14.2",
+    "pyjwt>=2.13.0",
+    "redis>=8.0.1",
+    "robyn>=0.88.0",
+    "sqlalchemy>=2.0.51",
+    "structlog>=26.1.0",
+]
+
+[dependency-groups]
+dev = [
+    "httpx>=0.28.1",
+]

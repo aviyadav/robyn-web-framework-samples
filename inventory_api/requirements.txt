@@ -1,0 +1,7 @@
+robyn>=0.88.0
+sqlalchemy>=2.0.51
+asyncpg>=0.31.0
+redis>=8.0.1
+structlog>=26.1.0
+pydantic-settings>=2.14.2
+pyjwt>=2.13.0

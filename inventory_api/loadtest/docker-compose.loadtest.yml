@@ -1,0 +1,8 @@
+services:
+  api:
+    environment:
+      # The app's default rate limit (100 req/min/IP) is meant to protect a
+      # real deployment, but it would dominate a benchmark run from a single
+      # IP. Raise it here so the load test measures the API's own
+      # performance instead of the rate limiter doing its job.
+      RATE_LIMIT_PER_MINUTE: "1000000"
